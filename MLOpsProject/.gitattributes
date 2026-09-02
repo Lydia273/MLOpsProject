@@ -1,4 +1,0 @@
-MLOpsProject/models/trained_sentiment_model/model.safetensors filter=lfs diff=lfs merge=lfs -text
-MLOpsProject/results/checkpoint-400/optimizer.pt filter=lfs diff=lfs merge=lfs -text
-models/trained_sentiment_model/model.safetensors filter=lfs diff=lfs merge=lfs -text
-results/checkpoint-400/optimizer.pt filter=lfs diff=lfs merge=lfs -text
