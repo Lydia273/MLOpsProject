@@ -92,19 +92,20 @@ uvicorn src.sentiment_analysis.api:app --reload
 
 ## My contributions
 
-<!-- TODO(Lydia): confirm / correct the bullets below before publishing.
-     Git history on this fork only attributes data-upload commits to me, so I
-     can't reconstruct the split automatically. Replace the bracketed text. -->
+- **Datasets.** Sourced and prepared the raw data the whole pipeline runs on:
+  the labelled `Train.csv` / `Test.csv` (Id / Body / Sentiment Type) and
+  `synthetic_social_media_data.csv`, added under `data/raw/` and later put under
+  DVC.
+- **Dependencies.** Maintained `requirements.txt` (pinned versions / Torch
+  compatibility during setup).
+- Repo cleanup for this portfolio pass: flattened the nested layout, fixed the CI
+  paths, rewrote this README.
 
-- **[confirm]** Data layer — assembling and cleaning the raw lyric CSVs
-  (`data/raw/`), the English-language filtering, and the
-  `src/sentiment_analysis/data.py` preprocessing into tokenised tensors.
-- **[confirm]** [e.g. wiring up W&B logging in `train.py` / writing the Hydra
-  config / the `tests/test_data.py` suite / the FastAPI endpoint — keep whichever
-  are yours].
-- **[confirm]** [DVC + GCS remote setup? CI workflow? Dockerfiles?]
-
-Team members and their focus areas: **[confirm]**.
+The four of us pushed most work through a single shared fork, so the git history
+here under-represents the split. The modelling / training code
+(`src/sentiment_analysis/`), the Hydra + W&B wiring, the tests, DVC/GCS setup and
+the Dockerfiles were led by Afonso Cunha, Sabina Kozłowska and Sandra Castro
+Gómez.
 
 ## License
 
